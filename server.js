@@ -1,7 +1,6 @@
 const express = require("express");
 const socketio = require("socket.io");
 const http = require("http");
-const { v4: uuidv4 } = require("uuid");
 
 const PORT = process.env.PORT || 2022;
 const app = express();
