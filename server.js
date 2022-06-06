@@ -34,3 +34,7 @@ io.on("connection", (socket) => {
 server.listen(PORT, () => {
   console.log(`Server Started on http://localhost:${PORT}`);
 });
+
+app.get("/", (req, res) => {
+  res.json({ appStatus: "Running" });
+});
